@@ -136,6 +136,9 @@ main{
     color: #000;
     
 }
+.Portfolio {
+    display: flex;
+}
 
 
 /* For a responsive layout */
