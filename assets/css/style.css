@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  border-style: double;
+  border-width: 12px;
+}
+
+
+header {
+  background-color: antiquewhite;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.title-section {
+  background: orange;
+  background: linear-gradient(90deg, rgba(255,165,0,1) 50%, rgba(255,215,0,1) 100%) ;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 5px solid black;
+  background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/artistic-blog-website-logo-design-template-ebffcef3264688d2308ee43f307ddf02_screen.jpg?ts=1604918567);
+}
+.title-section h1 {
+  font-size: 3em;
+  color: white;
+  border: 5px solid white;
+  padding: 0.5em 1em;
+  border-radius: 50%;
+  text-align: center;
+}
+.form-section {
+  width: 50%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style:inset;
+  border-width: 1px;
+}
+.form-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+.form-section input,
+.form-section textarea {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+}
+.form-section textarea {
+  height: 150px;
+}
+.form-section button {
+  padding: 0.5em;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

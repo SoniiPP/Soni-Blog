@@ -1,0 +1,154 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Light mode by default */
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+nav button {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+#postsList {
+    padding: 1em;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: double 5px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+/* 
+/* When dark mode is toggled */
+.dark-mode header,
+.dark-mode footer {
+    background-color: #212529;
+}
+
+.dark-mode nav button {
+    background-color: #6c757d;
+}
+
+.dark-mode footer a {
+    color: #9fcdff;
+}
+main{
+    border-top: double 5px;
+} */
+
+#toggleTheme {
+    font-size: 24px; /* size of the button */
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #ffd700; /* Sun color */
+}
+
+/* add a moon icon for when dark mode is active */
+.dark-mode #toggleTheme::after {
+    content: '🌙';
+    color: #f0e68c;
+}
+
+/* Hide the sun character when dark mode is active */
+.dark-mode #toggleTheme {
+    color: transparent; /* Makes the sun character invisible */
+}
+
+.post-container {
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    border-style: double;
+    
+}
+
+.post-container h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-container p {
+    color: #666;
+    border-style: double 3px;
+}
+
+.post-container span {
+    display: block;
+    margin-top: 20px;
+    font-style: italic;
+    color: #000;
+    
+}
+
+
+/* For a responsive layout */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav button {
+        margin-top: 0.5em;
+    }
+
+    footer {
+        position: static; /* To prevent overlap on small screens */
+    }
+}
